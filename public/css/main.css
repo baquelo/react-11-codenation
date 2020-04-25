@@ -1,0 +1,308 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400, 700);
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Montserrat, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+  background-attachment: fixed;
+  background-image: url("../img/capa-madmax2.jpg");
+  background-position: inherit;
+  background-size: cover;
+  color: #fff;
+  padding: 15px 15px;
+}
+
+.topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 0.8em;
+  height: 45px;
+}
+
+.topbar nav {
+  justify-content: space-between;
+  display: flex;
+}
+
+.topbar ul {
+  list-style: none;
+}
+
+.topbar ul li {
+  display: inline;
+  padding-right: 30px;
+  font-weight: bold;
+}
+
+.topbar a,
+.topbar a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.topbar a:hover {
+  color: #e5bd28;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+}
+
+.user img {
+  width: 45px;
+  border-radius: 50%;
+  padding: 0 10px;
+}
+
+.release {
+  margin-top: 200px;
+}
+
+#release h1 {
+  font-size: 4em;
+  margin-bottom: 0;
+}
+
+#release ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 5px;
+  font-size: 0.8em;
+}
+
+#release ul li {
+  display: inline;
+  padding-right: 10px;
+}
+
+#release ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#release ul li a:hover {
+  color: #e5bd28;
+}
+
+#release button {
+  border-radius: 50px;
+  background-color: #e5bd28;
+  color: #000;
+  padding: 15px 35px;
+  font-size: 0.9em;
+  border-style: none;
+}
+
+#release button:hover {
+  background-color: #bc9a1d;
+}
+
+#release button i {
+  font-size: 1.5em;
+}
+
+.cinema {
+  padding: 15px 0;
+  font-size: 0.9em;
+}
+
+.date {
+  font-size: 0.9em;
+  color: #e5bd28;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+.menu {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu ul li {
+  padding: 0 20px;
+}
+
+.menu a {
+  color: #e4bb23;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.8em;
+  padding: 25px 0px;
+}
+
+.menu a:hover {
+  border-bottom: 1px solid #e4bb23;
+}
+
+.card {
+  width: 230.39px;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 0 0 rgba(0, 0, 0, 0.09);
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 10px 10px;
+  background-color: #fff;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main figure {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+main img {
+  border-radius: 8px 8px 0 0;
+  width: 230.39px;
+}
+
+figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: #bc9a1d;
+  font-weight: bold;
+  font-size: 1.4em;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+figcaption span {
+  text-align: center;
+  padding: 10%;
+}
+
+.play {
+  padding-top: 20px;
+  color: #fff;
+  font-size: 2em;
+}
+
+.play:hover {
+  color: #e4bb23;
+}
+
+figure:hover figcaption {
+  display: flex;
+}
+
+.description {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.genre {
+  font-size: 0.75em;
+}
+
+.genre a,
+.genre {
+  color: #e4bb23;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+.genre a:hover {
+  text-decoration: underline;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+}
+
+.rating i {
+  color: rgba(187, 187, 187, 0.67);
+}
+
+.rating i:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.rating span {
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+footer img {
+  height: 100%;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+}
+
+footer a {
+  color: rgba(0, 0, 0, 0.247);
+  text-decoration: none;
+  padding: 20px;
+  font-size: 25px;
+}
+
+footer .twitter:hover {
+  color: #55acee;
+}
+
+footer .facebook:hover {
+  color: #3b5998;
+}
+
+footer .instagram:hover {
+  color: #e95950;
+}
